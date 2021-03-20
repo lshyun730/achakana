@@ -1,0 +1,152 @@
+@import "common.css";
+@import "https://unpkg.com/aos@2.3.1/dist/aos.css";
+
+section{padding-bottom: 10vw}
+h2{font-size: 1.5rem;font-weight: bold;padding-bottom: 3vw}
+.inner{width: 80vw;margin: 0 auto;}
+.phoneFrame{position: absolute;width: 108%;left: 50%;top: 50%;transform: translate(-50.2%,-51%);z-index: 1}
+
+
+
+
+
+
+.main{width: 100%;border-style: 100vw+10vw; color: #fff;padding: 3vw 0 7vw;margin-bottom: 20vw;z-index: 10}
+.main .sub{font-size: .8rem}
+.main h1{padding: 6vw 0 0;width: 25vw;}
+.main dl dt{padding: 4vw 0 1vw;font-weight: bold}
+.main dl img{width: 1.8vw}
+.main dl dd{float: left;padding-right: .8vw;font-size: .75rem;}
+.main .waveWrapper {overflow: hidden;position: absolute;left: 0;right: 0;bottom: 0;top: 0;margin: auto;z-index: -1}
+.main .waveWrapperInner {top: -5vw; position: absolute;width: 100%;overflow: hidden;height: 52vw;bottom: -1px;background-image: url(../images/img_main_bg.png);background-size: cover;background-position: center }
+.main .wave {background-image: url(../images/img_wave.png);position: absolute;left: 0;width: 200%;height: 52vw;background-repeat: repeat no-repeat;background-position: 0 bottom;transform-origin: center bottom;background-size: 50% 100px;animation: move_wave 15s linear infinite;}
+
+
+
+
+.about{position: relative;}
+.about .inner{display: flex;justify-content: space-around; align-items: center;flex-wrap: wrap}
+.about .inner::before{content: "";display: block;position: absolute; width: 100vw;height: 8vw;background: #ff9933;z-index: -1;top: 25vw;}
+.about .about_left{width: 30%;box-sizing: border-box;position: relative;}
+.about .about_right{width: 55%}
+.about .about_right p{padding: 1vw 0;}
+.about .about_right h3{font-size: 1.2rem;padding: 12vw 0 1vw;}
+
+
+
+
+.colorTypo_inner{display: flex;justify-content: space-between;flex-wrap: wrap}
+.colorTypo .colorTypo_left{width: 40%;}
+.colorTypo .colorTypo_right{width: 50%;}
+.colorTypo .colorTypo_right p{padding: 3vw 0;text-align: right;}
+
+
+
+
+.userFlow{position: relative;}
+.userFlow::after{content: "";display: block;background: url(../images/img_userflow_bg.png) no-repeat center center;background-size: cover;width: 40vw;height: 40vw;position: absolute;top: -5vw;left: -15vw;z-index: -1;}
+
+
+
+
+.wireFrame h2{text-align: center;}
+.wireFrame p{background: url(../images/img_wireframe.png) repeat-x;height: auto;width: 200vw;animation: slide 100s linear infinite;height: 38vw;background-size: contain;}
+.wireFrame img{opacity: 0;}
+
+
+
+.mainFlow .inner{display: flex;align-items: center;justify-content: space-between;flex-wrap: wrap}
+.mainFlow .mainFlow_left{width: 60%;}
+.mainFlow .mainFlow_left .left_bottom{padding: 8vw 0 0;}
+.mainFlow .mainFlow_left img{width: 90%;padding-top: 1vw}
+.mainFlow .mainFlow_right{width: 30%;position: relative;}
+.mainFlow .mainFlow_right .line{z-index: 2; position: absolute;width: 13vw;height: 2px;background: #ccc;bottom:40%;left: -45%}
+.mainFlow .mainFlow_right .line span{position: absolute;width: .5vw;height: .5vw;background: #ccc;top: 50%;transform: translateY(-50%);border-radius: 50%;}
+
+
+
+
+.productOrder{background: #021627;color: #fff;padding: 5vw 0 10vw;margin-bottom: 10vw;}
+.productOrder .title{width: 80vw;margin: 0 auto;text-align: center;padding-bottom: 6vw}
+.productOrder .productList{position: relative;}
+.productOrder .productMove{width: 21.4vw;margin: 0 auto;position: relative;z-index: 1}
+.productOrder .phoneFrame{width: 23.2%;z-index: 2}
+.productOrder .productLList{position: absolute;top: 50%;left: 50%;transform: translate(-50%,-50%);width: 121%;}
+
+
+.otherPages .inner{display: flex;justify-content: space-between;align-items: flex-start; padding-bottom: 20vw;flex-wrap: wrap}
+.otherPages .otherPages_left{width: 32.3%;position: relative}
+.otherPages .otherPages_right{width: 63%}
+.otherPages .otherPages_right .title{padding-bottom: 3vw;}
+
+
+
+
+.footer{position: relative;padding: 0;color: #fff}
+.footer::before{content: "";display: block;width: 2px;height: 15vw;background: #E3E3E3;position: absolute;left: 50%;top: -22.5vw;}
+.footer p{position: absolute;bottom: 7vw;text-align: center;font-weight: bold;font-size: 1.5rem;width: 100vw;}
+.footer p::before{content: "";display: block;width: 2px;height: 10vw;background: #fff;position: absolute;left: 50%;bottom: 10vw;}
+
+
+
+
+
+@media(max-width:1240px){
+    .about .inner::before{top: 31vw}
+}
+@media(max-width:1024px){
+    
+    html{font-size: 16px;}
+    .about .about_right h3{padding: 7vw 0 1vw}
+}
+
+@media(max-width:767px){
+    html{font-size: 18px}
+    section{padding-bottom: 30vw}
+    h2{padding-bottom: 8vw}
+
+    [class$="left"]{width: 100% !important;}
+    [class$="right"]{width: 100% !important;margin-top: 15vw !important}
+    
+    .main{padding: 15vw 0;height: 80vh;}
+    .main h1{width: 60vw;padding: 10vw 0}
+    .main dl{padding-bottom: 5vw;}
+    .main dl dd img{width: inherit;}
+    .main .waveWrapperInner{height: 100%}
+    .main .wave{height: 100%}
+    
+    .about .inner::before{height: 40vw;top: 50vw}
+    .about .about_left{width: 80% !important;}
+    .about .about_right{text-align: center}
+    
+    .colorTypo h2{width: 80vw;margin: 0 auto;}
+    .colorTypo .inner{width: 100%;}
+    .colorTypo .colorTypo_left{background: #f0f0f0;width: 80vw;padding: 10vw 10vw;}
+    .colorTypo .colorTypo_right{margin-top: 15vw !important;width: 80% !important;margin: 0 auto;}
+    .colorTypo .colorTypo_right p{padding-top: 10vw;}
+    
+    .wireFrame{background: #f0f0f0;padding: 10vw 0;margin-bottom: 20vw}
+    .wireFrame p{height: 60vw;background-size: cover;}
+    
+    .mainFlow .left_bottom{display: none;}
+    .mainFlow .mainFlow_right{width: 80% !important;margin: 0 auto;;}
+    
+    .productOrder{padding: 15vw 0 15vw}
+    .productOrder .productList{margin-top:10vw}
+    .productOrder .productList .productMove{width: 74.5%;}
+    .productOrder .phoneFrame{width: 80%;}
+    .productOrder .productLList{display: none;}
+    
+    .otherPages{padding-bottom: 10vw}
+    .otherPages .inner{flex-direction: column-reverse}
+    .otherPages .otherPages_left{width: 80%;margin: 20vw auto;}
+    
+    .footer::before{height: 30vw;top: -38vw}
+    .footer p{font-size: 1.25rem}
+}
+
+@media(max-width:500px){
+    html{font-size: 14px}
+}
+@media(max-width:360px){
+}

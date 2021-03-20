@@ -1,0 +1,205 @@
+@charset 'utf-8';
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css');
+
+
+/*font*/
+@font-face {
+    font-family: 'GmarketSans';
+    src: url('../font/GmarketSansMedium.eot');
+    src: url('../font/GmarketSansMedium.eot?#iefix') format('embedded-opentype'),
+        url('../font/GmarketSansMedium.woff2') format('woff2'),
+        url('../font/GmarketSansMedium.woff') format('woff'),
+        url('../font/GmarketSansMedium.ttf') format('truetype'),
+        url('../font/GmarketSansMedium.svg#GmarketSansMedium') format('svg');
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'GmarketSans';
+    src: url('../font/GmarketSansLight.eot');
+    src: url('../font/GmarketSansLight.eot?#iefix') format('embedded-opentype'),
+        url('../font/GmarketSansLight.woff2') format('woff2'),
+        url('../font/GmarketSansLight.woff') format('woff'),
+        url('../font/GmarketSansLight.ttf') format('truetype'),
+        url('../font/GmarketSansLight.svg#GmarketSansLight') format('svg');
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'GmarketSans';
+    src: url('../font/GmarketSansBold.eot');
+    src: url('../font/GmarketSansBold.eot?#iefix') format('embedded-opentype'),
+        url('../font/GmarketSansBold.woff2') format('woff2'),
+        url('../font/GmarketSansBold.woff') format('woff'),
+        url('../font/GmarketSansBold.ttf') format('truetype'),
+        url('../font/GmarketSansBold.svg#GmarketSansBold') format('svg');
+    font-weight: bold;
+    font-style: bold;
+}
+
+
+/*
+----------------------------
+reset
+----------------------------
+*/
+/* a 링크 초기화 */
+a {
+    color: #000;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #000;
+}
+
+html {
+    font-size: 20px;
+    overflow-x: hidden;
+}
+
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+/* 폰트 초기화 */
+body,
+input,
+textarea,
+select,
+button,
+table {
+    font-family: 'GmarketSans', AppleSDGothicNeo-Regular, 'Malgun Gothic', '맑은 고딕', dotum, '돋움', sans-serif;
+    color: #000;
+    line-height: 1.5;
+    font-size: 1rem
+}
+body{max-width: 1920px;}
+
+/* 폰트 스타일 초기화 */
+em,
+address {
+    font-style: normal;
+}
+
+/* 블릿기호 초기화 */
+ul,
+li,
+ol {
+    list-style: none;
+}
+
+/* 제목 태그 초기화 */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-size: 20px;
+    font-weight: normal;
+}
+
+/* 테두리 초기화 */
+img,
+fieldset {
+    border: 0 none;
+}
+
+/* 버튼 초기화 */
+button {
+    border: 0;
+}
+
+/* 반응형 */
+video,
+img {
+    width: 100%;
+    display: block;
+    height: auto
+}
+
+/* clearfix */
+.clearfix {
+    *zoom: 1;
+}
+
+.clearfix:before,
+.clearfix:after {
+    display: block;
+    content: '';
+    line-height: 0;
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+/* hidden 효과 */
+.hidden {
+    display: block;
+    overflow: hidden;
+    font-size: 0;
+    line-height: 0;
+    text-indent: -9999px;
+}
+
+
+/* input style */
+input {
+    background-image: none;
+}
+
+input[type=button],
+input[type=reset],
+input[type=text],
+input[type=password],
+input[type=submit],
+input[type=search],
+input[type=tel],
+input[type=email] {
+    -webkit-appearance: none;
+    border-radius: 0
+}
+
+input[type=search]::-webkit-search-cancel-button,
+input[type=search]::-webkit-search-decoration {
+    -webkit-appearance: none
+}
+
+input:checked[type=checkbox] {
+    background-color: #666;
+    -webkit-appearance: checkbox
+}
+
+
+/*ani*/
+
+
+@keyframes slide {
+    0% {
+        transform: translate3d(0, 0, 0);
+    }
+
+    100% {
+        transform: translate3d(-100vw, 0, 0);
+    }
+}
+
+@keyframes move_wave {
+    0% {
+        transform: translateX(0) translateZ(0) scaleY(1)
+    }
+
+    50% {
+        transform: translateX(-25%) translateZ(0) scaleY(0.55)
+    }
+
+    100% {
+        transform: translateX(-50%) translateZ(0) scaleY(1)
+    }
+}
